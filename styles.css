@@ -12,11 +12,19 @@ html, body {
 }
 
 .english_block {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.english_block:hover {
+    background-color: rgba(0, 128, 0, 0.4);
 }
 
 .math_block {
-    background-color: aqua;
+    background-color: rgba(13, 72, 248, 0.8);
+}
+
+.math_block:hover {
+    background-color: rgba(13, 72, 248, 0.4);
 }
 
 .english_block, .math_block {
@@ -36,7 +44,7 @@ html, body {
         grid-template-rows: 1fr 1fr;
     }
     .english_block, .math_block {
-        grid-column: span 1;
+        grid-column: span;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
