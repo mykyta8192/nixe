@@ -1,4 +1,5 @@
 html, body {
+    cursor: url('/images/cursor-dachshund.png'), auto;
     margin: 0;
     height: 100%;
     width: 100%;
@@ -12,19 +13,56 @@ html, body {
 }
 
 .english_block {
-    background-color: rgba(0, 128, 0, 0.8);
+    position: relative;
+    color: black;
 }
 
+.english_block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/english_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    filter: blur(2px);
+    transition: filter 0.2s;
+}
+
+.english_block:hover::before {
+    filter: blur(5px);
+}
+
+/* Change cursor on hover */
 .english_block:hover {
-    background-color: rgba(0, 128, 0, 0.4);
+    cursor: url('/images/cursor-dachshund-2.png'), auto;
 }
 
 .math_block {
-    background-color: rgba(13, 72, 248, 0.8);
+    position: relative;
+    color: white;
+}
+
+.math_block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/math_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    filter: blur(1px);
+    transition: filter 0.2s;
+}
+
+.math_block:hover::before {
+    filter: blur(3px);
 }
 
 .math_block:hover {
-    background-color: rgba(13, 72, 248, 0.4);
+    cursor: url('/images/cursor-dachshund-2.png'), auto;
 }
 
 .english_block, .math_block {
@@ -36,6 +74,8 @@ html, body {
 
 .maintxt {
     grid-area: 4 / 4 / 5 / 5;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
