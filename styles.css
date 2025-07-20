@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -65,17 +66,16 @@ html, body {
 .english_block, .math_block {
     grid-column: span 3;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .maintxt {
-    grid-area: 4 / 4 / 5 / 5;
     position: relative;
     z-index: 1;
     border-radius: 30%;
     background-color: beige;
+    font-size: 5rem;
 }
 
 @media (max-width: 768px) {
