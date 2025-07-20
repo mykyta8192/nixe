@@ -1,5 +1,5 @@
 html, body {
-    cursor: url('/images/cursor-dachshund.png'), auto;
+    cursor: url('images/cursor-dachshund.png'), auto;
     margin: 0;
     height: 100%;
     width: 100%;
@@ -21,12 +21,11 @@ html, body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/images/english_background.jpg');
+    background-image: url('images/english_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-    filter: blur(2px);
     transition: filter 0.2s;
 }
 
@@ -34,26 +33,24 @@ html, body {
     filter: blur(5px);
 }
 
-/* Change cursor on hover */
 .english_block:hover {
-    cursor: url('/images/cursor-dachshund-2.png'), auto;
+    cursor: url('images/cursor-dachshund-2.png'), auto;
 }
 
 .math_block {
     position: relative;
-    color: white;
+    color: black;
 }
 
 .math_block::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/images/math_background.jpg');
+    background-image: url('images/math_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-    filter: blur(1px);
     transition: filter 0.2s;
 }
 
@@ -62,7 +59,7 @@ html, body {
 }
 
 .math_block:hover {
-    cursor: url('/images/cursor-dachshund-2.png'), auto;
+    cursor: url('images/cursor-dachshund-2.png'), auto;
 }
 
 .english_block, .math_block {
@@ -70,12 +67,15 @@ html, body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    text-decoration: none;
 }
 
 .maintxt {
     grid-area: 4 / 4 / 5 / 5;
     position: relative;
     z-index: 1;
+    border-radius: 30%;
+    background-color: beige;
 }
 
 @media (max-width: 768px) {
@@ -84,7 +84,7 @@ html, body {
         grid-template-rows: 1fr 1fr;
     }
     .english_block, .math_block {
-        grid-column: span;
+        grid-column: span auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
