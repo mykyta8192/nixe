@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#english_part {
+    background-color: green;
+}
+
+#math_part {
+    background-color: aqua;
+}
+
+#english_part, #math_part {
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
