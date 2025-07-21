@@ -40,8 +40,8 @@ a, button, .left_nav img:hover {
 }
 
 .right_nav a {
-    padding-left: 10px;
-    font-size: 1.4rem;
+    padding-left: 2rem;
+    font-size: 3rem;
     color: black;
     font-weight: 600;
     text-decoration: none;
@@ -99,5 +99,21 @@ a, button, .left_nav img:hover {
     }
     .math_main {
         grid-area: 2 / 2 / 3 / 3;
+    }
+
+    body.menu-open .english_main {
+        display: none;
+    }
+
+    body.menu-open .math_main {
+        display: none;
+    }
+
+    .right_nav a {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+    .center_nav a {
+        font-size: 2rem;
     }
 }

@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nixe School</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <script>
     document.addEventListener("DOMContentLoaded", () => {
         const menuIcon = document.querySelector('.left_nav img');
@@ -11,6 +12,7 @@
 
         menuIcon.addEventListener('click', () => {
             menu.classList.toggle('show');
+            document.body.classList.toggle('menu-open')
         });
     });
 </script>
@@ -24,7 +26,7 @@
                         <a href="index.html">Home</a>
                         <a href="english.html">English</a>
                         <a href="math.html">Math</a>
-                        <a href="login.html">Log in</a>
+                        <a href="login.html">Log in </a>
                         <a href="signup.html">Sign up</a>
                     </div>
                 </div>
