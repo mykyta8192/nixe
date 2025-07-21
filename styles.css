@@ -7,6 +7,8 @@ body, html {
     background-repeat: no-repeat;
     background-position: center;
     cursor: url(images/cursor-dachshund.png), auto;
+    display: flex;
+    flex-direction: column;
 }
 
 a, button, .left_nav img:hover {
@@ -48,7 +50,7 @@ a, button, .left_nav img:hover {
 }
 
 .mainbar_index {
-    min-height: 100vh;
+    flex: 1 1 auto;
     background-image: url("images/background_index.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -87,7 +89,7 @@ a, button, .left_nav img:hover {
 
 
 @media (max-width: 650px) {
-    .mainbar {
+    .mainbar_index {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(6, 1fr);
@@ -118,6 +120,7 @@ a, button, .left_nav img:hover {
 }
 
 .mainbar_english {
+    flex: 1 1 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -125,9 +128,25 @@ a, button, .left_nav img:hover {
     margin: 20px;
 }
 
+.english_block {
+    position: relative;
+}
+
+.english_block p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: black; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .english_block img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 @media (max-width: 750px) {
