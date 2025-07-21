@@ -1,10 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("/images/background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navbar {
-    background-color: blanchedalmond;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,8 +18,12 @@ body {
     height: 3rem;
 }
 
-.center_nav h1{
+.center_nav a{
     margin: 0;
+    font-family: "Lucida Console";
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
 }
 
 .right_nav {
@@ -25,7 +32,13 @@ body {
 
 .right_nav a {
     padding-left: 10px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: black;
+    font-weight: 600;
     text-decoration: none;
+}
+
+.img_main {
+    width: 100vw;
+    height: 90vh;
 }
