@@ -6,6 +6,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    cursor: url(images/cursor-dachshund.png), auto;
+}
+
+a, button, .left_nav img:hover {
+    cursor: url(images/cursor-dachshund-2.png), auto;
 }
 
 .navbar {
@@ -43,7 +48,7 @@ body {
 }
 
 .mainbar {
-    background-image: url("images/backgroung_index.png");
+    background-image: url("images/background_index.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
