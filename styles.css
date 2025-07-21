@@ -71,7 +71,7 @@ body {
 }
 
 .menu a {
-    background-color: aquamarine;
+    background-color:skyblue;
     font-size: 3.5rem;
     color: black;
     font-weight: 600;
@@ -80,4 +80,19 @@ body {
 
 .menu.show {
     display: flex;
+}
+
+
+@media (max-width: 600px) {
+    .mainbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .english_main {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .math_main {
+        grid-area: 2 / 2 / 3 / 3;
+    }
 }
