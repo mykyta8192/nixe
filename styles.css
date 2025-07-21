@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("/images/background_image.jpg");
+    background-image: url("images/background_image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .navbar {
@@ -21,13 +22,16 @@ body {
 .center_nav a{
     margin: 0;
     font-family: "Lucida Console";
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: black;
     text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .right_nav {
     padding-right: 10px;
+    display: flex;
 }
 
 .right_nav a {
@@ -38,7 +42,24 @@ body {
     text-decoration: none;
 }
 
-.img_main {
-    width: 100vw;
-    height: 90vh;
+.mainbar {
+    background-image: url("images/backgroung_index.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
+
+.mainbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.english_main a, .math_main a{
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 3rem;
+    display: inline-block;
 }
