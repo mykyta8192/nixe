@@ -4,12 +4,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nixe School</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.querySelector('.left_nav img');
+        const menu = document.getElementById('mobileMenu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
     </head>
     <body>
         <div>
             <div class="navbar">
                 <div class="left_nav">
                     <img src="images/menu_icon.png">
+                    <div class="menu" id="mobileMenu">
+                        <a href="index.html">Home</a>
+                        <a href="english.html">English</a>
+                        <a href="math.html">Math</a>
+                        <a href="login.html">Log in</a>
+                        <a href="signup.html">Sign up</a>
+                    </div>
                 </div>
                 <div class="center_nav">
                     <a href="index.html">Nixe school</a>

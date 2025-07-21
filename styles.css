@@ -63,3 +63,21 @@ body {
     margin-top: 3rem;
     display: inline-block;
 }
+
+.menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+}
+
+.menu a {
+    background-color: aquamarine;
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu.show {
+    display: flex;
+}
