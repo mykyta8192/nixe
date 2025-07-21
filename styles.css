@@ -1,11 +1,11 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-image: url("images/background_image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
     cursor: url(images/cursor-dachshund.png), auto;
 }
 
@@ -27,7 +27,7 @@ a, button, .left_nav img:hover {
 .center_nav a{
     margin: 0;
     font-family: "Lucida Console";
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: black;
     text-decoration: none;
     margin-top: 10px;
@@ -41,21 +41,18 @@ a, button, .left_nav img:hover {
 
 .right_nav a {
     padding-left: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     font-weight: 600;
     text-decoration: none;
 }
 
-.mainbar {
+.mainbar_index {
+    min-height: 100vh;
     background-image: url("images/background_index.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 95vh;
-}
-
-.mainbar {
     display: flex;
     justify-content: space-around;
 }
@@ -88,7 +85,8 @@ a, button, .left_nav img:hover {
 }
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 650px) {
     .mainbar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -115,5 +113,26 @@ a, button, .left_nav img:hover {
     }
     .center_nav a {
         font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.mainbar_english {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.english_block img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 750px) {
+    .mainbar_english {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
