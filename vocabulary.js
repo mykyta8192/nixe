@@ -1,8 +1,18 @@
-var words = [
-    {word: "Dog", meaning: "Broshka"},
-    {word: "Cat", meaning: "Animal"},
-    {word: "Chinchilla", meaning: "Hui"}
-]
+var allWords = {}
+var words = []
+
+
+
+
+function levelWords(level) {
+    fetch('data/words.json')
+        .then (res => res.json())
+        .then (data => {
+            allWords = data;
+            words = allWords[level];
+            showRandomWord()
+        })
+}
 
 function showRandomWord() {
     var randomWord = words[Math.floor(Math.random() * words.length)];
@@ -24,8 +34,4 @@ function showOtherSide() {
         meaning.style.display = 'none';
         word.style.display = "block"
     }
-}
-
-window.onload = function() {
-    showRandomWord()
 }

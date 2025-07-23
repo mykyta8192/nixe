@@ -213,9 +213,34 @@ a, button, .left_nav img:hover {
 }
 
 #word_text, #meaning_text {
-    font-size: 5rem;
+    font-size: 6rem;
+}
+
+.vocabulary_level_text {
+    font-size: 3rem;
 }
 
 .vocabulary_level_button {
+    display: flex;
+    justify-content: space-around;
+}
 
+.level_button {
+    font-size: 2rem;
+}
+
+.next_button {
+    font-size: 3rem;
+}
+
+@media (max-width: 750px) {
+    .vocabulary_level_text {
+        font-size: 2.5rem;
+    }
+    #vocabulary_card {
+        width: 90%;
+    }
+    #word_text, #meaning_text {
+        font-size: 4rem;
+    }
 }

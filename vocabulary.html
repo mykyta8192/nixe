@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width:device-width initial-scale=1.0">
+        <meta name="viewport" content="width:device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <title>Nixe Vocabulary</title>
@@ -29,33 +29,35 @@
             </div>
         </div>
         <div class="mainbar_vocabulary">
-            <div>
+            <div class="vocabulary_level">
                 <div class="vocabulary_level_text">Choose your vocabulary level</div>
                 <div class="vocabulary_level_button">
-                    <button>A1</button>
-                    <button>A2</button>
-                    <button>B1</button>
-                    <button>B2</button>
-                    <button>C1</button>
-                    <button>C2</button>
+                    <button class="level_button" onclick="levelWords('a1')">A1</button>
+                    <button class="level_button" onclick="levelWords('a2')">A2</button>
+                    <button class="level_button" onclick="levelWords('b1')">B1</button>
+                    <button class="level_button" onclick="levelWords('b2')">B2</button>
+                    <button class="level_button" onclick="levelWords('c1')">C1</button>
+                    <button class="level_button" onclick="levelWords('c2')">C2</button>
                 </div>
             </div>
             <button onclick="showOtherSide()" id="vocabulary_card">
                 <div class="vocabulary_word">
                     <div id="word_text"></div>
                     <div>
+                        Choose your english level<br>
                         Click to see the meaning of this word
                     </div>
                 </div>
                 <div class="vocabulary_meaning">
                     <div id="meaning_text"></div>
                     <div>
+                        Choose your english level<br>
                         Click to see the word
                     </div>
                 </div>
             </button>
             <div>
-                <button onclick="showRandomWord()">Next word</button>
+                <button class="next_button" onclick="showRandomWord()">Next word</button>
             </div>
         </div>
     </body>

@@ -1,0 +1,38 @@
+{
+  "a1": [
+    {"word": "cat", "meaning": "A small domesticated animal that says meow"},
+    {"word": "dog", "meaning": "A common domesticated animal that barks"},
+    {"word": "house", "meaning": "A building where people live"},
+    {"word": "water", "meaning": "A clear liquid necessary for life"}
+  ],
+  "a2": [
+    {"word": "travel", "meaning": "To go from one place to another"},
+    {"word": "happy", "meaning": "Feeling joy or pleasure"},
+    {"word": "school", "meaning": "A place where people learn"},
+    {"word": "friend", "meaning": "A person you like and trust"}
+  ],
+  "b1": [
+    {"word": "career", "meaning": "A job or profession"},
+    {"word": "environment", "meaning": "The natural world around us"},
+    {"word": "technology", "meaning": "Tools and machines used to solve problems"},
+    {"word": "culture", "meaning": "Ideas, customs, and social behavior of a group"}
+  ],
+  "b2": [
+    {"word": "innovation", "meaning": "A new idea or method"},
+    {"word": "strategy", "meaning": "A plan of action"},
+    {"word": "investment", "meaning": "Putting money into something to make a profit"},
+    {"word": "influence", "meaning": "The capacity to have an effect on someone or something"}
+  ],
+  "c1": [
+    {"word": "philosophy", "meaning": "The study of the fundamental nature of knowledge and existence"},
+    {"word": "complexity", "meaning": "The state of being complicated"},
+    {"word": "perspective", "meaning": "A particular attitude toward something"},
+    {"word": "hypothesis", "meaning": "A proposed explanation based on limited evidence"}
+  ],
+  "c2": [
+    {"word": "epistemology", "meaning": "The theory of knowledge"},
+    {"word": "metamorphosis", "meaning": "A change of form or nature"},
+    {"word": "quintessential", "meaning": "Representing the most perfect example"},
+    {"word": "ubiquitous", "meaning": "Present everywhere"}
+  ]
+}
