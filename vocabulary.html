@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nixe School</title>
+        <meta name="viewport" content="width:device-width initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <title>Nixe Vocabulary</title>
     </head>
     <body>
+        <script src="vocabulary.js"></script>
         <script src="menu.js"></script>
         <div class="navbar">
             <div class="left_nav">
@@ -23,19 +21,28 @@
                 </div>
             </div>
             <div class="center_nav">
-                <a href="index.html">Nixe school</a>
+                <a href="index.html">Nixe Vocabulary</a>
             </div>
             <div class="right_nav">
                 <a href="login.html">Log in</a>
                 <a href="signup.html">Sign up</a>
             </div>
         </div>
-        <div class="mainbar_index">
-            <div class="english_main">
-               <a href="english.html">English</a>
-            </div>
-            <div class="math_main">
-                <a href="math.html">Math</a>
+        <div class="mainbar_vocabulary">
+            <button onclick="showOtherSide()" id="vocabulary_card">
+                <div class="vocabulary_word">
+                    <div id="word_text">
+                        Word
+                    </div>
+                </div>
+                <div class="vocabulary_meaning">
+                    <div id="meaning_text">
+                        Meaning
+                    </div>
+                </div>
+            </button>
+            <div>
+                <button onclick="showRandomWord()">Random Word</button>
             </div>
         </div>
     </body>

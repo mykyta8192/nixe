@@ -11,6 +11,12 @@ body, html {
     flex-direction: column;
 }
 
+button {
+    background-color: aqua;
+    border-radius: 30%;
+    font-size: large;
+}
+
 a, button, .left_nav img:hover {
     cursor: url(images/cursor-dachshund-2.png), auto;
 }
@@ -169,4 +175,35 @@ a, button, .left_nav img:hover {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+}
+
+.mainbar_vocabulary {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vocabulary_card {
+    background-color: blue;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vocabulary_meaning, .vocabulary_word {
+    position: absolute;
+}
+
+.vocabulary_meaning {
+    display: none;
+}
+
+#word_text, #meaning_text {
+    font-size: 5rem;
 }

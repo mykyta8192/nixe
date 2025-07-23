@@ -8,18 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const menuIcon = document.querySelector('.left_nav img');
-                const menu = document.getElementById('mobileMenu');
-                menuIcon.addEventListener('click', () => {
-                    menu.classList.toggle('show');
-                    document.body.classList.toggle('menu-open')
-                });
-            });
-        </script>
     </head>
     <body>
+        <script src="menu.js"></script>
         <div class="navbar">
             <div class="left_nav">
                 <img src="images/menu_icon.png">
@@ -32,7 +23,7 @@
                 </div>
             </div>
             <div class="center_nav">
-                <a href="index.html">Nixe school</a>
+                <a href="index.html">Nixe English Lab</a>
             </div>
             <div class="right_nav">
                 <a href="login.html">Log in</a>
