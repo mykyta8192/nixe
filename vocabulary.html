@@ -33,32 +33,35 @@
         </div>
         <div class="mainbar_vocabulary">
             <div class="vocabulary_level">
-                <div class="vocabulary_level_text">Choose your vocabulary level</div>
+                <div class="vocabulary_level_text">Choose your level</div>
                 <div class="vocabulary_level_button">
-                    <button class="level_button" onclick="levelWords('a1')">A1</button>
-                    <button class="level_button" onclick="levelWords('a2')">A2</button>
-                    <button class="level_button" onclick="levelWords('b1')">B1</button>
-                    <button class="level_button" onclick="levelWords('b2')">B2</button>
-                    <button class="level_button" onclick="levelWords('c1')">C1</button>
-                    <button class="level_button" onclick="levelWords('c2')">C2</button>
+                    <button class="level_button" id="main_level" onclick="levelWords('a1', this)">A1</button>
+                    <button class="level_button" onclick="levelWords('a2', this)">A2</button>
+                    <button class="level_button" onclick="levelWords('b1', this)">B1</button>
+                    <button class="level_button" onclick="levelWords('b2', this)">B2</button>
+                    <button class="level_button" onclick="levelWords('c1', this)">C1</button>
+                    <button class="level_button" onclick="levelWords('c2', this)">C2</button>
                 </div>
             </div>
             <button onclick="showOtherSide()" id="vocabulary_card">
                 <div class="vocabulary_word">
-                    <div id="word_text"></div>
+                    <div id="word_text">Hi</div>
                     <div>
                         Click to see the meaning of this word
                     </div>
                 </div>
                 <div class="vocabulary_meaning">
-                    <div id="meaning_text"></div>
+                    <div id="meaning_text">Greeting</div>
                     <div>
                         Click to see the word
                     </div>
                 </div>
             </button>
-            <div>
+            <div class="vocabulary_buttons">
                 <button class="next_button" onclick="showRandomWord()">Next word</button>
+                <button class="save_button" onclick="saveThisWord()">Save word</button>
+                <button class="saved_button" onclick="showSavedWords()">My words</button>
+                <button class="delete_button" onclick="deleteSavedWords()">Clean my words</button>
             </div>
         </div>
     </body>
