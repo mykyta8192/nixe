@@ -3,7 +3,6 @@ var words = []
 
 
 
-
 function levelWords(level) {
     fetch('data/words.json')
         .then (res => res.json())
@@ -34,4 +33,8 @@ function showOtherSide() {
         meaning.style.display = 'none';
         word.style.display = "block"
     }
+}
+
+window.onload = function() {
+    showRandomWord()
 }
