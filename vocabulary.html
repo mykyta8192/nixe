@@ -29,20 +29,33 @@
             </div>
         </div>
         <div class="mainbar_vocabulary">
+            <div>
+                <div class="vocabulary_level_text">Choose your vocabulary level</div>
+                <div class="vocabulary_level_button">
+                    <button>A1</button>
+                    <button>A2</button>
+                    <button>B1</button>
+                    <button>B2</button>
+                    <button>C1</button>
+                    <button>C2</button>
+                </div>
+            </div>
             <button onclick="showOtherSide()" id="vocabulary_card">
                 <div class="vocabulary_word">
-                    <div id="word_text">
-                        Word
+                    <div id="word_text"></div>
+                    <div>
+                        Click to see the meaning of this word
                     </div>
                 </div>
                 <div class="vocabulary_meaning">
-                    <div id="meaning_text">
-                        Meaning
+                    <div id="meaning_text"></div>
+                    <div>
+                        Click to see the word
                     </div>
                 </div>
             </button>
             <div>
-                <button onclick="showRandomWord()">Random Word</button>
+                <button onclick="showRandomWord()">Next word</button>
             </div>
         </div>
     </body>

@@ -1,10 +1,15 @@
 var words = [
-    {word: "Hi", meaning: "greeting"},
-    {word: "Cat", meaning: "Animal"}
+    {word: "Dog", meaning: "Broshka"},
+    {word: "Cat", meaning: "Animal"},
+    {word: "Chinchilla", meaning: "Hui"}
 ]
 
 function showRandomWord() {
     var randomWord = words[Math.floor(Math.random() * words.length)];
+    var meaning = document.querySelector('.vocabulary_meaning');
+    if (meaning.style.display != 'none') {
+        showOtherSide()
+    }
     document.getElementById('word_text').textContent = randomWord.word;
     document.getElementById('meaning_text').textContent = randomWord.meaning;
 }
@@ -19,4 +24,8 @@ function showOtherSide() {
         meaning.style.display = 'none';
         word.style.display = "block"
     }
+}
+
+window.onload = function() {
+    showRandomWord()
 }

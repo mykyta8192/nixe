@@ -186,6 +186,14 @@ a, button, .left_nav img:hover {
     align-items: center;
 }
 
+.mainbar_vocabulary div {
+    margin: 10px;
+}
+
+.vocabulary_level_text {
+   text-align: center; 
+}
+
 #vocabulary_card {
     background-color: blue;
     position: relative;
@@ -206,4 +214,8 @@ a, button, .left_nav img:hover {
 
 #word_text, #meaning_text {
     font-size: 5rem;
+}
+
+.vocabulary_level_button {
+
 }
