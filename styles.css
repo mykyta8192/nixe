@@ -213,14 +213,14 @@ a, button, .left_nav img:hover {
 }
 
 #word_text {
-    font-size: 4rem;
+    font-size: 6vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
 #meaning_text {
-    font-size: 2rem;
+    font-size: 3vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
@@ -268,7 +268,7 @@ a, button, .left_nav img:hover {
         font-size: 10vw;
     }
     #meaning_text {
-        font-size: 1.2rem;
+        font-size: 5vw;
     }
     .next_button, .save_button, .saved_button, .delete_button{
         font-size: 4vw;
