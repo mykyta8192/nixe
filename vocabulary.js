@@ -66,7 +66,7 @@ function showSavedWords() {
 
 function deleteSavedWords() {
     localStorage.removeItem('savedWords');
-    alert('Words was deleted')
+    alert('Words were deleted')
 }
 
 window.onload = function() {

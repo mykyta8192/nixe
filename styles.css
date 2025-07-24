@@ -259,18 +259,21 @@ a, button, .left_nav img:hover {
 
 @media (max-width: 750px) {
     .vocabulary_level_text {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #vocabulary_card {
         width: 90%;
     }
     #word_text {
-        font-size: 4rem;
-    }
-    #meaning_text {
         font-size: 2rem;
     }
+    #meaning_text {
+        font-size: 1.2rem;
+    }
     .next_button, .save_button, .saved_button, .delete_button{
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    .word_text_bottom, .meaning_text_bottom {
+        font-size: 0.9rem;
     }
 }
