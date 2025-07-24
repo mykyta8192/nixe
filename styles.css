@@ -37,7 +37,7 @@ a, button, .left_nav img:hover {
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 4.5vw;
     color: black;
     text-decoration: none;
     margin-top: 10px;
@@ -51,7 +51,7 @@ a, button, .left_nav img:hover {
 
 .right_nav a {
     padding-left: 2rem;
-    font-size: 2rem;
+    font-size: 4vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
@@ -128,11 +128,11 @@ a, button, .left_nav img:hover {
     }
 
     .right_nav a {
-        font-size: 1rem;
+        font-size: 5vw;
         padding-left: 0.5rem;
     }
     .center_nav a {
-        font-size: 2rem;
+        font-size: 7vw;
         text-align: center;
     }
 }
@@ -227,7 +227,7 @@ a, button, .left_nav img:hover {
 }
 
 .vocabulary_level_text {
-    font-size: 3rem;
+    font-size: 4vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
@@ -239,14 +239,14 @@ a, button, .left_nav img:hover {
 }
 
 .level_button {
-    font-size: 2rem;
+    font-size: 4vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
 .next_button, .save_button, .saved_button, .delete_button{
-    font-size: 2rem;
+    font-size: 3vw;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
@@ -259,19 +259,19 @@ a, button, .left_nav img:hover {
 
 @media (max-width: 750px) {
     .vocabulary_level_text {
-        font-size: 1.5rem;
+        font-size: 6vw;
     }
     #vocabulary_card {
         width: 90%;
     }
     #word_text {
-        font-size: 2rem;
+        font-size: 10vw;
     }
     #meaning_text {
         font-size: 1.2rem;
     }
     .next_button, .save_button, .saved_button, .delete_button{
-        font-size: 1rem;
+        font-size: 4vw;
     }
     .word_text_bottom, .meaning_text_bottom {
         font-size: 0.9rem;
